@@ -14,8 +14,8 @@ strand4 = "ATCGATCGATCGATCGACTGACTAGTCATAGCTATGCATGTAGCTACTCGATCGATCGATCGATCGATC
     #that AT Content = (number of As + number of Ts) / (length of the sequence)
 def solutionOne():
     print "Part 1 For Strand: ", strand1
-    print "AT content = ", (strand1.count('A') + strand1.count('T'))/ 2
-    
+    print "AT content = ", "%.2f" % ((float(strand1.count('A')) + float(strand1.count('T'))  )/ len(strand1))
+
     #solution two finds the location of GAATTC and finds the size of
     #the fragment that would be created by cutting using EcoRI restriction enzyme
 def solutionTwo():
@@ -42,14 +42,6 @@ def solutionFour(strand4):
     #extrons with uppercase chars and leaves the intons as lowercase
     print strand4.replace(strand4[0:63], strand4[0:63].upper()).replace(strand4[90:len(strand4)], strand4[90:len(strand4)].upper())
 
-    
-    
-    
-    
-    
-    
-    
-    
 
 solutionOne()
 solutionTwo()
