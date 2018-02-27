@@ -1,4 +1,5 @@
 import bioinformatics
+# all test code
 
 bioinformatics.pctOfProtein("msrslllrfllfllllpplp", ["L"]) # should return 50
 bioinformatics.pctOfProtein("MSRSLLLRFLLFLLLLPPLP", ["M"]) # should return 5
