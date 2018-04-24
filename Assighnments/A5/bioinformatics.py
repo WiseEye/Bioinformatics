@@ -1,4 +1,4 @@
-
+#Function: Translate codins into amino acids from an amino acid lookup table
 def translate_dna(sequence):
     #size of condons
     n = 3
